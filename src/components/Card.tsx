@@ -1,8 +1,8 @@
 interface CardProps {
-    tite:string;
+    title:string;
     description:string;
     image:string;
-    llink:string
+    link:string
 }
 const Card = ({title,description,image,link} : CardProps) => {
   return (
