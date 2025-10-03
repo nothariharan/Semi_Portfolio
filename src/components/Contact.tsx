@@ -19,7 +19,14 @@ import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
   ];
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <section className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-extrabold text-gray-800 mb-6">Summon Me</h2>
+        <div className="flex items-center">
+            {links.map((link) => (
+            <a href={link.href} key = {link.label} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-shadow-gray-800 hover:text-gray-600 mr-[2rem]">{link.icon} <span className="text-lg">{link.label}</span></a>
+            ))}
+        </div>
+    </section>
   )
 }
 

@@ -4,7 +4,8 @@ import { GoProjectSymlink } from "react-icons/go";
 import { SiCoursera } from "react-icons/si";
 import Card from "./Card";
 import About from "./About";
-import { Contact } from "lucide-react";
+import Contact from "./Contact";
+
 const tabs = [
   {
     id: "home",
