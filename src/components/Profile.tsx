@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { FaCamera } from "react-icons/fa"
+import Tab from "./Tab"
 
 const Profile = () => {
     const [bannerUrl,setBannerUrl] = useState("https://dummyimage.com/1500x400/000/fff")
@@ -48,8 +49,8 @@ const Profile = () => {
             <p className="mt-2 ">nah I'm more than sigma, I'm an ohio alpha sigma rizziler. my mewing streak never ends and i edge all day to skibidi toilet WHILE MEWING i also rizz up all the skibidi gyatts in ohio so you know im not edging you when i say that im that sigma.</p>
             <button className="mt-4 bg-yellow-400 text-black py-2 px-4 rounded hover:bg-amber-400"> Buy Me 67 Coffees</button>
         </div>
-
-        </div>
+    </div>
+    <Tab />
 
     </div>
   )
