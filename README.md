@@ -45,8 +45,7 @@ git clone https://github.com/nothariharan/Semi_Portfolio.git
 - Include your projects and experiences
 
 ## 🌐 Live Demo
-
-Visit the live site: [Portfolio Website](https://nothariharan.github.io/Semi_Portfolio/)
+not deploying hehe
 
 ## 📜 License
 
