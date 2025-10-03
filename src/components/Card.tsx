@@ -1,8 +1,19 @@
-import React from 'react'
-
-const Card = () => {
+interface CardProps {
+    tite:string;
+    description:string;
+    image:string;
+    llink:string
+}
+const Card = ({title,description,image,link} : CardProps) => {
   return (
-    <div>Card</div>
+    <div className="max-w-sm mx-auto m-[1rem] bg-[#1a1c1e] rounded-lg shadow-md overflow-hidden">
+        <img src={image} alt={title} className="w-full h-48 object-cover" />
+        <div className="p-6">
+            <h2 className="text-2xl font-bold mb-2 text-white">{title}</h2>
+            <p className="text-white mb-4">{description}</p>
+            <a href={link} className="inline-block py-2 px-2 bg-white text-black font-semibold rounded-lg shadow hover:bg-gray-500 hover:text-white transition duration-200"> Wanna know more? </a>
+        </div>
+    </div>
   )
 }
 

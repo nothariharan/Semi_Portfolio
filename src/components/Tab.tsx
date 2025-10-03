@@ -17,7 +17,7 @@ const tabs = [
             key={index}
             title="Amazing Card"
             description="This is a cool-looking card component using React and Tailwind CSS."
-            image="https://via.placeholder.com/400x300"
+            image="https://dummyimage.com/400x300/000/fff"
           />
         ))}
       </div>
@@ -40,7 +40,7 @@ const tabs = [
             key={index}
             title="Amazing Card"
             description="This is a cool-looking card component using React and Tailwind CSS."
-            image="https://via.placeholder.com/400x300"
+            image="https://dummyimage.com/400x300/000/fff"
           />
         ))}
       </div>
@@ -57,7 +57,7 @@ const tabs = [
             key={index}
             title="Amazing Card"
             description="This is a cool-looking card component using React and Tailwind CSS."
-            image="https://via.placeholder.com/400x300"
+            image="https://dummyimage.com/400x300/000/fff"
           />
         ))}
       </div>
@@ -83,6 +83,9 @@ const Tabs = () => {
                 </div>
             </button>
         ))}
+    </div>
+    <div className="mt-4 p-4 rounded-lg">
+        {tabs.find((tab) => tab.id === activeTab)?.content }
     </div>
   </div>
 };
